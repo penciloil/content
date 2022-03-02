@@ -1,0 +1,20 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(2,minmax(150px,min-content));
+    grid-template-columns: max-content 1fr 1fr min-content;
+}
+
+.item {
+    background-color: orangered;
+    border: 2px dashed white;
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
